@@ -1,242 +1,210 @@
-BANKING SYSTEM – COMPREHENSIVE EXAMPLE
-I. USER STORIES (15 total)
+✅ Complete Banking System Example
+1. User Stories (15)
 
-Organized into Epics for clarity.
+Below are 15 well-formed user stories following the standard format:
 
-EPIC 1 — User & Account Management
-US-01: User Registration
+Epic 1 — Customer Account Management
+US-01: User Registration & Identity Verification
 
-As a new banking customer
-I want to register for an online banking account
-So that I can access digital banking services
+As a new user, I want to register and verify my identity so that I can access banking services.
 
-Acceptance Criteria
+US-02: Login & Multi-Factor Authentication
 
-User can sign up using email, phone, and personal details
+As a user, I want to securely log in with MFA so that I can protect my account.
 
-System validates unique email/phone
+US-03: View Account Summary
 
-Password must meet security requirements
+As a customer, I want to view my account balances so I can monitor my financial status.
 
-Confirmation email/SMS is sent
+Epic 2 — Money Movement
+US-04: Transfer Money Between My Accounts
 
-Registration succeeds only after verification
+As a customer, I want to move money between my own accounts so I can manage my funds.
 
-US-02: User Login with MFA
+US-05: Transfer Money to External Accounts
 
-As a customer
-I want to securely log in with multifactor authentication
-So that my account remains protected
+As a customer, I want to send money to accounts at other banks so I can pay others.
 
-Acceptance Criteria
+US-06: Schedule Recurring Transfers
 
-Login requires correct username/password
+As a customer, I want to schedule recurring transfers so bills or savings happen automatically.
 
-System triggers OTP or authenticator app request
+Epic 3 — Payments & Cards
+US-07: Pay Bills
 
-Login succeeds only with valid MFA code
+As a customer, I want to pay utility bills from my account so I can manage my expenses.
 
-Failed attempts trigger lockout after X tries
+US-08: Debit Card Management
 
-US-03: Create a Bank Account (Checking/Savings)
+As a customer, I want to freeze or unfreeze my debit card so I can prevent unauthorized use.
 
-As a customer
-I want to open a new checking or savings account
-So that I can deposit and manage my money
+Epic 4 — Loans
+US-09: Apply for a Loan
 
-Acceptance Criteria
+As a customer, I want to apply for a loan online so I can avoid visiting a branch.
 
-User can select account type
+US-10: View Loan Details & Payment Schedule
 
-Minimum balance rules apply
+As a borrower, I want to see my loan balance and upcoming payments so I can plan my finances.
 
-Unique account number is generated
+Epic 5 — Statements & Audit
+US-11: Download Monthly Statements
 
-Account appears in dashboard immediately
+As a customer, I want to download account statements so I can track my transactions.
 
-EPIC 2 — Deposits / Withdrawals / Balances
-US-04: View Account Balance
+US-12: Transaction Search & Filtering
 
-As a customer
-I want to view my real-time account balance
-So that I know how much money I have
+As a customer, I want to search my transactions by date or keyword so I can find specific charges.
 
-Acceptance Criteria
+Epic 6 — Notifications & Alerts
+US-13: Low Balance Alerts
 
-Balance is fetched in real time
+As a customer, I want alerts for low balances so I can avoid overdrafts.
 
-Available and pending balance displayed
+US-14: Transaction Alerts
 
-Balance visible on dashboard and account page
+As a customer, I want notifications for large or suspicious transactions to detect fraud.
 
-US-05: Make a Mobile Check Deposit
+Epic 7 — Administration / Compliance
+US-15: Admin User Management
 
-As a customer
-I want to deposit a check using my mobile device
-So that I don’t need to visit a branch
+As an admin, I want to manage user accounts and lock/unlock them to ensure compliance and security.
 
-Acceptance Criteria
+2. Full Product Backlog With Weighted Story Points
 
-User uploads front/back images of the check
+| Story ID | Description                               | Story Points |
+| -------- | ----------------------------------------- | ------------ |
+| US-01    | User Registration & Identity Verification | **8**        |
+| US-02    | Login & Multi-Factor Authentication       | **5**        |
+| US-03    | View Account Summary                      | **3**        |
+| US-04    | Internal Transfers                        | **5**        |
+| US-05    | External Transfers                        | **13**       |
+| US-06    | Recurring Transfers                       | **8**        |
+| US-07    | Bill Payments                             | **8**        |
+| US-08    | Debit Card Freeze/Unfreeze                | **5**        |
+| US-09    | Loan Applications                         | **13**       |
+| US-10    | Loan Details View                         | **5**        |
+| US-11    | Download Statements                       | **3**        |
+| US-12    | Transaction Search & Filter               | **5**        |
+| US-13    | Low Balance Alerts                        | **3**        |
+| US-14    | Suspicious Transaction Alerts             | **8**        |
+| US-15    | Admin User Management                     | **8**        |
 
-System validates clarity and check format
+3. Acceptance Criteria (Per User Story)
+US-01: User Registration & Identity Verification (8 pts)
 
-Deposit is marked pending until review
+Acceptance Criteria:
+✔ User can enter personal info: name, phone, email, SSN/ID.
+✔ System validates email and phone via OTP.
+✔ System checks identity via government ID / verification API.
+✔ Account is created only after verification passes.
+✔ Error shown for duplicate or invalid identity.
 
-Confirmation notification is sent
+US-02: Login & Multi-Factor Authentication (5 pts)
 
-US-06: Withdraw Funds (ATM/Branch Request Record)
+Acceptance Criteria:
+✔ User can log in with username/password.
+✔ MFA (SMS/Email/Auth App) required.
+✔ Failed attempts lock account after configurable threshold.
+✔ User can request password reset securely.
 
-As a customer
-I want to submit a withdrawal request for large amounts
-So that I can pick it up at a branch/ATM
+US-03: View Account Summary (3 pts)
 
-Acceptance Criteria
+Acceptance Criteria:
+✔ User sees all checking, savings, and loan accounts on dashboard.
+✔ Balances and available funds displayed accurately.
+✔ Data updates in real time.
 
-Request includes amount and pickup location
+US-04: Transfer Money Between My Accounts (5 pts)
 
-System validates available balance
+Acceptance Criteria:
+✔ User can choose source and destination accounts.
+✔ Transfer completes immediately if sufficient funds.
+✔ Updated balances shown after transfer.
+✔ Error message displayed if insufficient funds.
 
-Request confirmation generated
+US-05: Transfer Money to External Accounts (13 pts)
 
-Withdrawal reduces available balance
+Acceptance Criteria:
+✔ User can add payee with routing/account number.
+✔ Payee must be verified before transfer.
+✔ Transfer uses ACH or wire depending on selection.
+✔ System shows estimated delivery time.
+✔ Confirmation and receipt generated.
 
-EPIC 3 — Transfers & Payments
-US-07: Internal Transfer Between Own Accounts
+US-06: Schedule Recurring Transfers (8 pts)
 
-As a customer
-I want to transfer money between my own accounts
-So that I can manage my funds effectively
+Acceptance Criteria:
+✔ User can choose daily/weekly/monthly schedules.
+✔ Transfers trigger automatically at the scheduled time.
+✔ User can pause or cancel recurring transfers.
+✔ Notifications sent upon success or failure.
 
-Acceptance Criteria
+US-07: Bill Payments (8 pts)
 
-User selects source and destination accounts
+Acceptance Criteria:
+✔ User can add billers (utilities, credit cards, etc.).
+✔ Payment amount and date can be selected.
+✔ Confirmation of payment shown on screen and stored.
+✔ System warns user if balance is insufficient.
 
-Transfers reflect instantly
+US-08: Debit Card Freeze/Unfreeze (5 pts)
 
-System enforces account balance rules
+Acceptance Criteria:
+✔ User can toggle card status between active and frozen.
+✔ Changes take effect instantly.
+✔ System blocks transactions during freeze.
 
-Transfer receipt generated
+US-09: Apply for a Loan (13 pts)
 
-US-08: External Transfer to Another Bank
+Acceptance Criteria:
+✔ User fills loan application with income/employment data.
+✔ System runs automated eligibility and credit checks.
+✔ Approval/denial status shown to user.
+✔ Approved loans create an active loan account.
 
-As a customer
-I want to transfer money to someone at another bank
-So that I can pay individuals outside my institution
+US-10: View Loan Details & Schedule (5 pts)
 
-Acceptance Criteria
+Acceptance Criteria:
+✔ User sees loan balance, interest rate, and amortization schedule.
+✔ User can view next payment due date.
+✔ User can download payment schedule.
 
-User inputs routing number + external account
+US-11: Download Monthly Statements (3 pts)
 
-System validates account ownership (micro-deposits or instant verify)
+Acceptance Criteria:
+✔ User can pick statement month/year.
+✔ Statements generated as PDF.
+✔ Download completes within seconds.
+✔ Statement includes official bank branding.
 
-Transfer happens via ACH with standard delays
+US-12: Transaction Search & Filter (5 pts)
 
-User notified of success/failure
+Acceptance Criteria:
+✔ User can filter by date range, amount, type, keyword.
+✔ Search returns results within 2 seconds (optimized).
+✔ All details included: merchant, timestamp, category.
 
-US-09: Bill Payment / Scheduled Payments
+US-13: Low Balance Alerts (3 pts)
 
-As a customer
-I want to pay bills or schedule recurring payments
-So that my responsibilities are automated
+Acceptance Criteria:
+✔ User can set custom threshold levels.
+✔ Alerts sent via SMS, email, or push.
+✔ Alert triggers immediately after threshold is crossed.
 
-Acceptance Criteria
+US-14: Suspicious Transaction Alerts (8 pts)
 
-User can add billers (utilities, credit cards, etc.)
+Acceptance Criteria:
+✔ System detects unusual spending patterns.
+✔ Alerts sent instantly to user.
+✔ User can report a transaction as fraudulent.
+✔ Fraud-alerted card auto-freezes until resolved.
 
-Supports one-time or recurring payments
+US-15: Admin User Management (8 pts)
 
-Scheduled payment triggers automatically
+Acceptance Criteria:
+✔ Admin can search customers by name, email, or account.
+✔ Admin can lock/unlock accounts.
+✔ All admin actions logged for audit.
+✔ Permissions restricted by admin role.
 
-Confirmation is logged in transaction history
-
-EPIC 4 — Loans and Credit
-US-10: Apply for a Loan
-
-As a customer
-I want to submit a loan application
-So that I can request funds from the bank
-
-Acceptance Criteria
-
-User selects loan type (personal, auto, mortgage)
-
-System collects income & identity info
-
-Application moves to underwriting queue
-
-User receives approval or rejection notification
-
-US-11: View Loan Repayment Schedule
-
-As a borrower
-I want to view my repayment schedule
-So that I can track upcoming payments
-
-Acceptance Criteria
-
-Monthly breakdown displayed
-
-Interest + principal clearly shown
-
-Support for early payoff calculations
-
-EPIC 5 — Statements & Transaction Reports
-US-12: Download Monthly Bank Statements
-
-As a customer
-I want to download statements
-So that I can review my financial activity
-
-Acceptance Criteria
-
-Statements available as PDF
-
-User can select month/year
-
-Statement includes official bank header, balances, and transactions
-
-US-13: View Detailed Transaction History
-
-As a customer
-I want to view my transaction history
-So that I can review past activity
-
-Acceptance Criteria
-
-Transactions searchable by type/date/category
-
-Pending vs. posted transactions indicated
-
-Details include merchant info, timestamps, and geolocation if available
-
-EPIC 6 — Notifications & Security
-US-14: Enable/Disable Transaction Alerts
-
-As a customer
-I want to control which alerts I receive
-So that I only get relevant notifications
-
-Acceptance Criteria
-
-User can enable push/SMS/email alerts
-
-Alerts can be toggled by category (withdrawals, transfers, deposits)
-
-Settings persist across sessions
-
-US-15: Fraud Detection Alerts
-
-As a customer
-I want to be notified of suspicious activity
-So that I can protect my account
-
-Acceptance Criteria
-
-Risk engine detects flagged transactions
-
-User gets immediate alert
-
-User can confirm or deny activity
-
-Denied activity results in frozen card/account
