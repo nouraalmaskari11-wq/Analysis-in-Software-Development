@@ -1,0 +1,279 @@
+✅ Comprehensive Hotel Management System (HMS) Example
+
+A Hotel Management System allows guests, staff, and administrators to manage reservations, check-in/out, rooms, payments, housekeeping, and more.
+
+1. User Stories (15 Total)
+
+Grouped by hotel functional areas.
+
+A. Guest Management & Identity
+US-01: Guest Registration
+
+As a guest
+I want to create an online profile
+So that I can manage my bookings easily
+Story Points: 3
+
+Acceptance Criteria
+
+ User can register with email, phone, and password
+
+ Duplicate accounts rejected
+
+ Email/phone verification required
+
+ Confirmation notification sent
+
+US-02: Guest Login
+
+As a registered guest
+I want to log into the hotel portal
+So that I can access my reservations
+Story Points: 2
+
+Acceptance Criteria
+
+ Login requires username/email + password
+
+ Forgotten password flow works
+
+ Account locked after repeated failures
+
+ Browsers remain logged out after session timeout
+
+B. Room Search & Reservations
+US-03: Search Available Rooms
+
+As a guest
+I want to search rooms by date, occupancy, and type
+So that I can find a suitable room
+Story Points: 5
+
+Acceptance Criteria
+
+ Search filters: dates, number of guests, room type, price range
+
+ Only available rooms displayed
+
+ System updates availability in real-time
+
+US-04: Make a Reservation
+
+As a guest
+I want to book a room
+So that I can secure my stay
+Story Points: 8
+
+Acceptance Criteria
+
+ Reservation includes dates, room type, price, number of guests
+
+ System prevents double booking
+
+ Reservation confirmation sent
+
+ Guest can pay deposit online (optional)
+
+US-05: Modify/Cancel Reservation
+
+As a guest
+I want to update or cancel my booking
+So that my plans remain flexible
+Story Points: 4
+
+Acceptance Criteria
+
+ Guest can change dates or room type if available
+
+ Cancellation rules (refund windows) applied
+
+ Updated confirmation/documentation sent
+
+C. Check-In / Check-Out
+US-06: Front Desk Check-In
+
+As a receptionist
+I want to check in arriving guests
+So that they can begin their stay
+Story Points: 5
+
+Acceptance Criteria
+
+ Verify identity and reservation
+
+ Assign specific room number
+
+ Update room status to "occupied"
+
+ Print or send digital key card
+
+US-07: Guest Check-Out
+
+As a receptionist
+I want to check out guests
+So that their stay can end and room becomes free
+Story Points: 3
+
+Acceptance Criteria
+
+ Final bill generated
+
+ Room set to “needs cleaning”
+
+ Deposit adjustments applied
+
+ Receipt issued to guest
+
+D. Billing & Payments
+US-08: Generate Guest Bill
+
+As a front-desk staff
+I want to create an itemized bill
+So that guests can pay accurately
+Story Points: 5
+
+Acceptance Criteria
+
+ Includes room charges, taxes, room service, extras
+
+ Auto-calculates total
+
+ Can be exported or emailed
+
+ Shows paid vs outstanding balance
+
+US-09: Online Payment
+
+As a guest
+I want to pay my bill online
+So that I can complete payments conveniently
+Story Points: 4
+
+Acceptance Criteria
+
+ Supports card, digital wallet, and bank transfer
+
+ Payment receipts emailed
+
+ Partial payments allowed
+
+ Payment history visible in guest portal
+
+E. Housekeeping Management
+US-10: Update Room Cleaning Status
+
+As a housekeeping staff
+I want to mark rooms as cleaned or in-progress
+So that front desk knows room availability
+Story Points: 3
+
+Acceptance Criteria
+
+ Status options: “clean”, “dirty”, “in-progress”
+
+ Timestamp and staff name logged
+
+ Updated status reflects in reservation dashboard
+
+US-11: Housekeeping Task Assignment
+
+As a housekeeping supervisor
+I want to assign rooms to cleaners
+So that workload is managed efficiently
+Story Points: 5
+
+Acceptance Criteria
+
+ Assign task by room, time, and staff
+
+ Cleaners receive notification
+
+ Supervisor dashboard shows task progress
+
+F. Room Inventory & Maintenance
+US-12: Room Maintenance Requests
+
+As a staff member
+I want to create maintenance requests
+So that issues are fixed promptly
+Story Points: 4
+
+Acceptance Criteria
+
+ Request includes room, issue type, urgency
+
+ Maintenance team receives notification
+
+ Status tracked: open, in-progress, resolved
+
+ Completion timestamp stored
+
+US-13: Update Room Inventory
+
+As an administrator
+I want to manage room details
+So that guests can book accurate room types
+Story Points: 6
+
+Acceptance Criteria
+
+ Add/edit room type, price, capacity, photos
+
+ Rooms can be marked active/inactive
+
+ Updates reflected on booking portal instantly
+
+G. Staff & Notifications
+US-14: Staff Account Management
+
+As an admin
+I want to create and manage staff accounts
+So that employees can access assigned modules
+Story Points: 4
+
+Acceptance Criteria
+
+ Roles: admin, receptionist, housekeeping, maintenance
+
+ Access control enforced
+
+ Staff status: active/inactive
+
+ Password resets supported
+
+US-15: Notification Center
+
+As a guest or staff member
+I want to see all alerts and messages
+So that I stay informed
+Story Points: 2
+
+Acceptance Criteria
+
+ Notifications: booking confirmations, cleaning tasks, maintenance updates
+
+ Mark as read/unread
+
+ Filter by type and date
+
+2. Complete Product Backlog (Weighted)
+
+| Priority | User Story ID | Story Name                | Points | Rationale                     |
+| -------- | ------------- | ------------------------- | ------ | ----------------------------- |
+| 1        | US-01         | Guest Registration        | 3      | Required for user onboarding  |
+| 2        | US-02         | Guest Login               | 2      | Portal access essential       |
+| 3        | US-03         | Search Rooms              | 5      | Core to hotel operations      |
+| 4        | US-04         | Make Reservation          | 8      | Primary customer workflow     |
+| 5        | US-05         | Modify/Cancel Reservation | 4      | High guest value              |
+| 6        | US-06         | Check-In                  | 5      | Operational necessity         |
+| 7        | US-07         | Check-Out                 | 3      | Required to complete stay     |
+| 8        | US-08         | Generate Bill             | 5      | Essential for revenue         |
+| 9        | US-09         | Online Payment            | 4      | Convenience + automation      |
+| 10       | US-10         | Cleaning Status Update    | 3      | Supports room readiness       |
+| 11       | US-11         | Housekeeping Assignment   | 5      | Operational efficiency        |
+| 12       | US-12         | Maintenance Requests      | 4      | Safety & quality              |
+| 13       | US-13         | Room Inventory Management | 6      | Admin controls key hotel data |
+| 14       | US-14         | Staff Account Management  | 4      | User access control           |
+| 15       | US-15         | Notification Center       | 2      | UX improvement                |
+
+
