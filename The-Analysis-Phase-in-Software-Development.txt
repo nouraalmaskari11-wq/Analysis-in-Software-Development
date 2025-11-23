@@ -1,0 +1,126 @@
+1. The Analysis Phase in Software Development
+1.1 Definition and Importance
+
+The Analysis Phase is a stage in the Software Development Life Cycle (SDLC) where business needs are examined, requirements are gathered, and a clear understanding of the system’s functional and non-functional expectations is established.
+
+Importance
+
+Ensures developers and stakeholders share the same understanding.
+
+Reduces rework by clarifying requirements early.
+
+Provides the foundation for design, development, and testing.
+
+Identifies constraints, risks, and dependencies before implementation begins.
+
+1.2 Sub-Steps of the Analysis Phase
+1.2.1 Requirement Elicitation
+
+Collecting raw requirements from stakeholders using:
+
+Interviews
+
+Surveys
+
+Observation
+
+Workshops
+
+Document review
+
+1.2.2 Requirement Analysis
+
+Organizing and analyzing gathered information to:
+
+Identify conflicts or inconsistencies
+
+Prioritize business needs
+
+Clarify ambiguous statements
+
+Separate functional from non-functional requirements
+
+1.2.3 Requirement Specification
+
+Documenting validated requirements in clear and formal artifacts such as:
+
+SRS (Software Requirements Specification)
+
+Use cases
+
+User stories (Agile)
+
+Process models (DFDs, BPMN)
+
+1.2.4 Requirement Validation
+
+Ensuring requirements meet quality attributes:
+
+Complete
+
+Consistent
+
+Feasible
+
+Testable
+
+Traceable
+
+Performed through:
+
+Reviews
+
+Walkthroughs
+
+Prototyping
+
+1.3 Deliverables and Outcomes
+
+Key outputs include:
+
+Documents
+
+SRS document
+
+Functional specification
+
+Non-functional specification
+
+Use case diagrams / user stories
+
+Process flows and models
+
+Outcomes
+
+Agreement on what will be built
+
+Prioritized business needs
+
+Clear acceptance criteria
+
+Defined scope
+
+1.4 Best Practices & Common Challenges
+Best Practices
+
+Engage all relevant stakeholders early
+
+Use diagrams to visualize processes
+
+Maintain a requirements traceability matrix
+
+Validate continuously
+
+Keep requirements simple and testable
+
+Common Challenges
+
+Ambiguous or changing requirements
+
+Lack of stakeholder involvement
+
+Miscommunication between teams
+
+Overly complicated requirement documents
+
+Scope creep
