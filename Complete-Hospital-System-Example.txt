@@ -1,0 +1,291 @@
+Comprehensive Hospital Management System (HMS) Example
+
+A Hospital Management System enables patients, doctors, nurses, and administrators to manage appointments, patient records, billing, pharmacy operations, and more.
+
+This example includes:
+
+✔️ 15 full user stories
+✔️ Acceptance criteria for each
+✔️ Complete, weighted product backlog
+✔️ Covers: appointments, EHR, billing, pharmacy, admissions, discharge, lab tests, staff management, etc.
+
+1. User Stories (15 Total)
+
+Stories grouped by feature domain.
+
+A. Patient Registration & Identity Management
+US-01: Patient Registration
+
+As a new patient
+I want to register with my personal and contact details
+So that I can access hospital services.
+Story Points: 3
+
+Acceptance Criteria
+
+ Patient can enter name, DOB, ID number, address, insurance info
+
+ Duplicate patient detection must alert staff
+
+ System generates a unique patient ID
+
+ Patient receives confirmation SMS/email
+
+US-02: Patient Login & Profile
+
+As a patient
+I want to log into my online portal
+So that I can access my medical information
+Story Points: 3
+
+Acceptance Criteria
+
+ Login requires email/phone + password
+
+ Patients can view/update contact info
+
+ Password reset functionality works
+
+ Account locked after X failed attempts
+
+B. Appointments & Scheduling
+US-03: Book Doctor Appointment
+
+As a patient
+I want to schedule an appointment with a doctor
+So that I can receive medical consultation
+Story Points: 5
+
+Acceptance Criteria
+
+ Patient selects doctor, date, and time
+
+ Only available time slots shown
+
+ Confirmation sent by SMS/email
+
+ Appointment appears in patient dashboard
+
+US-04: Doctor Appointment Calendar
+
+As a doctor
+I want to view my daily/weekly schedule
+So that I can manage my appointments
+Story Points: 3
+
+Acceptance Criteria
+
+ Displays upcoming appointments with patient info
+
+ Allows doctors to block unavailable hours
+
+ Real-time updates for cancellations or rescheduling
+
+C. Electronic Health Records (EHR)
+US-05: Add/Edit Patient Medical Record
+
+As a doctor
+I want to create or update patient medical records
+So that I can maintain accurate health information
+Story Points: 8
+
+Acceptance Criteria
+
+ Fields: symptoms, diagnosis, medications, allergies
+
+ System logs doctor ID and timestamp
+
+ Edits preserved through version history
+
+ Records restricted to authorized staff only
+
+US-06: View Medical History
+
+As a patient
+I want to view my medical history
+So that I can understand past diagnoses and treatments
+Story Points: 3
+
+Acceptance Criteria
+
+ Displays past visits, test results, prescriptions
+
+ Records must be read-only
+
+ Downloadable in PDF format
+
+D. Billing & Payments
+US-07: Generate Patient Bill
+
+As an administrative staff
+I want to generate a bill for a patient visit
+So that the patient can make payment
+Story Points: 5
+
+Acceptance Criteria
+
+ Includes consultation, lab tests, procedures, medication
+
+ Insurance coverage automatically applied
+
+ Bill downloadable and printable
+
+ Payment status displayed (paid/pending)
+
+US-08: Online Payment for Billing
+
+As a patient
+I want to pay my hospital bills online
+So that I can settle payments easily
+Story Points: 4
+
+Acceptance Criteria
+
+ Accepts card, mobile wallet, and bank transfer
+
+ Receipt emailed after payment
+
+ Payment reflected in billing history
+
+ Failed transactions prompt retry
+
+E. Pharmacy Management
+US-09: Add/Update Medication Inventory
+
+As a pharmacist
+I want to manage medicine stock
+So that we can track available inventory
+Story Points: 8
+
+Acceptance Criteria
+
+ Add/update medication name, stock, expiry
+
+ Low-stock alerts generated
+
+ Only authorized staff can edit inventory
+
+ Logs all inventory changes
+
+US-10: Issue Medicines Against Prescription
+
+As a pharmacist
+I want to issue medicines based on doctor prescription
+So that patient medication is handled accurately
+Story Points: 5
+
+Acceptance Criteria
+
+ Pharmacist can view doctor’s digital prescriptions
+
+ Issuing meds reduces inventory automatically
+
+ Alerts for expired or out-of-stock items
+
+ Patient receives itemized receipt
+
+F. Laboratory & Diagnostics
+US-11: Order Lab Test
+
+As a doctor
+I want to order lab tests for a patient
+So that I can get diagnostic information
+Story Points: 4
+
+Acceptance Criteria
+
+ Select test type and urgency level
+
+ Notification sent to laboratory staff
+
+ Test order linked to patient file
+
+ Shows estimated completion time
+
+US-12: Upload Lab Test Results
+
+As a lab technician
+I want to upload test results
+So that doctors and patients can review them
+Story Points: 5
+
+Acceptance Criteria
+
+ Upload PDF/Images or enter text results
+
+ Auto-notify doctor and patient
+
+ Results stored in EHR
+
+ Results locked after submission (no edits)
+
+G. Admissions & Discharge
+US-13: Admit Patient to Ward
+
+As a nurse
+I want to admit a patient into an assigned ward
+So that inpatient records are initiated
+Story Points: 5
+
+Acceptance Criteria
+
+ Select room/bed based on availability
+
+ Admission time and reason recorded
+
+ Bed occupancy updated
+
+ Admission visible in patient’s dashboard
+
+US-14: Patient Discharge Summary
+
+As a doctor
+I want to create a discharge summary
+So that the patient can leave with medical documentation
+Story Points: 4
+
+Acceptance Criteria
+
+ Includes diagnosis, treatment, prescriptions, follow-up
+
+ Summary auto-shared with patient portal
+
+ Discharge time recorded
+
+ Bed becomes available immediately
+
+H. Notifications & Alerts
+US-15: Hospital Notification Center
+
+As a patient
+I want to view all alerts and messages
+So that I can stay updated about hospital activities
+Story Points: 2
+
+Acceptance Criteria
+
+ Displays: appointments, bills, test results, reminders
+
+ Mark as read/unread
+
+ Sort by date and category
+
+2. Complete Product Backlog (Weighted)
+
+| Priority | User Story ID | Story Name              | Points | Rationale                         |
+| -------- | ------------- | ----------------------- | ------ | --------------------------------- |
+| 1        | US-01         | Patient Registration    | 3      | Required for user onboarding      |
+| 2        | US-02         | Patient Login           | 3      | Core access requirement           |
+| 3        | US-03         | Book Appointment        | 5      | Critical hospital workflow        |
+| 4        | US-04         | Doctor Calendar         | 3      | Needed for appointment management |
+| 5        | US-05         | Add/Edit Medical Record | 8      | Core EHR functionality            |
+| 6        | US-06         | View Medical History    | 3      | High patient value                |
+| 7        | US-11         | Order Lab Test          | 4      | Common workflow                   |
+| 8        | US-12         | Upload Lab Results      | 5      | Essential for diagnosis           |
+| 9        | US-13         | Patient Admission       | 5      | Supports inpatient care           |
+| 10       | US-14         | Discharge Summary       | 4      | Required to complete care cycle   |
+| 11       | US-09         | Medication Inventory    | 8      | Critical for pharmacy operations  |
+| 12       | US-10         | Issue Medicines         | 5      | Complements pharmacy workflow     |
+| 13       | US-07         | Generate Bill           | 5      | Required for revenue cycle        |
+| 14       | US-08         | Online Payment          | 4      | Enhances patient convenience      |
+| 15       | US-15         | Notification Center     | 2      | UX enhancement                    |
