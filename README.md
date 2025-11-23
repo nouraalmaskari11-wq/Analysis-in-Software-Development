@@ -73,3 +73,29 @@ III. COMPLETE ACCEPTANCE CRITERIA SUMMARY (Compact View)
 | **US-15** | Suspicious detection, confirmation workflow, freeze account    |
 
 
+
+✅ Comprehensive Hospital Management System (HMS) Example
+
+<img width="324" height="182" alt="image" src="https://github.com/user-attachments/assets/303f02aa-9b68-4749-bb97-300f0037192d" />
+
+2. Complete Product Backlog (Weighted)
+
+| Priority | User Story ID | Story Name              | Points | Rationale                         |
+| -------- | ------------- | ----------------------- | ------ | --------------------------------- |
+| 1        | US-01         | Patient Registration    | 3      | Required for user onboarding      |
+| 2        | US-02         | Patient Login           | 3      | Core access requirement           |
+| 3        | US-03         | Book Appointment        | 5      | Critical hospital workflow        |
+| 4        | US-04         | Doctor Calendar         | 3      | Needed for appointment management |
+| 5        | US-05         | Add/Edit Medical Record | 8      | Core EHR functionality            |
+| 6        | US-06         | View Medical History    | 3      | High patient value                |
+| 7        | US-11         | Order Lab Test          | 4      | Common workflow                   |
+| 8        | US-12         | Upload Lab Results      | 5      | Essential for diagnosis           |
+| 9        | US-13         | Patient Admission       | 5      | Supports inpatient care           |
+| 10       | US-14         | Discharge Summary       | 4      | Required to complete care cycle   |
+| 11       | US-09         | Medication Inventory    | 8      | Critical for pharmacy operations  |
+| 12       | US-10         | Issue Medicines         | 5      | Complements pharmacy workflow     |
+| 13       | US-07         | Generate Bill           | 5      | Required for revenue cycle        |
+| 14       | US-08         | Online Payment          | 4      | Enhances patient convenience      |
+| 15       | US-15         | Notification Center     | 2      | UX enhancement                    |
+
+
