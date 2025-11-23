@@ -1,0 +1,88 @@
+2. Product Backlog Development (Agile)
+2.1 Definition and Purpose
+
+A Product Backlog is a prioritized list of all desired work for a product, maintained by the Product Owner.
+
+Purpose
+
+Represents a single source of truth for requirements
+
+Guides sprint planning
+
+Enables prioritization based on business value
+
+Evolves with product changes
+
+2.2 Creating and Structuring a Backlog
+Steps
+
+Identify product vision and goals
+
+Gather high-level requirements (epics)
+
+Break epics into user stories
+
+Add acceptance criteria
+
+Assign story points
+
+Prioritize by business needs
+
+Typical Backlog Structure
+Item Type	Description
+Epics	Large features broken into stories
+User Stories	Small units of customer value
+Tasks	Technical steps inside stories
+Bugs	Defects to be fixed
+2.3 Backlog Prioritization Techniques
+
+Common methods:
+
+1. MoSCoW
+
+Must Have
+
+Should Have
+
+Could Have
+
+Won’t Have
+
+2. Value vs Effort Matrix
+
+Plot items by:
+
+Business value
+
+Development effort
+
+3. WSJF (Weighted Shortest Job First)
+
+Based on SAFe:
+WSJF = Cost of Delay / Job Size
+
+4. Kano Model
+
+Classifies features by customer satisfaction impact:
+
+Basic
+
+Performance
+
+Delighters
+
+2.4 Backlog Refinement and Maintenance
+
+Backlog refinement includes:
+
+Breaking large stories into smaller ones
+
+Revising priorities
+
+Updating estimates
+
+Removing outdated items
+
+Adding new requirements
+
+Performed every 1–2 weeks during Scrum.
