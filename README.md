@@ -1,29 +1,29 @@
 # Analysis-in-Software-Development
 
-The Analysis Phase in Software Development
+✅The Analysis Phase in Software Development
 <img width="980" height="530" alt="image" src="https://github.com/user-attachments/assets/b488221b-c4d6-4f8d-a01c-6b17e3d14587" />
 
 
 
-Product Backlog Development
+✅Product Backlog Development
 
 <img width="1801" height="1027" alt="image" src="https://github.com/user-attachments/assets/27d03818-5a10-4e82-a0d7-922ee95e4afa" />
 
 
 
-User Stories
+✅User Stories
 
 <img width="474" height="352" alt="image" src="https://github.com/user-attachments/assets/5b996375-f79f-448c-ac1f-2a444a9e36e3" />
 
 
 
-Weighting and Estimation
+✅Weighting and Estimation
 
 <img width="720" height="540" alt="image" src="https://github.com/user-attachments/assets/4ab825a3-4bd4-4e1c-a0af-dcaab7fff5e8" />
 
 
 
-Complete Banking System Example
+✅Complete Banking System Example
 
 <img width="1920" height="1356" alt="image" src="https://github.com/user-attachments/assets/ea102501-5478-439b-9b88-fa255a5b5021" />
 
@@ -99,3 +99,28 @@ III. COMPLETE ACCEPTANCE CRITERIA SUMMARY (Compact View)
 | 15       | US-15         | Notification Center     | 2      | UX enhancement                    |
 
 
+
+✅ Comprehensive Hotel Management System (HMS) Example
+
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/5e089098-cce0-44a9-9819-8ba28456ebc9" />
+
+
+
+Complete Product Backlog (Weighted)
+| Priority | User Story ID | Story Name                | Points | Rationale                     |
+| -------- | ------------- | ------------------------- | ------ | ----------------------------- |
+| 1        | US-01         | Guest Registration        | 3      | Required for user onboarding  |
+| 2        | US-02         | Guest Login               | 2      | Portal access essential       |
+| 3        | US-03         | Search Rooms              | 5      | Core to hotel operations      |
+| 4        | US-04         | Make Reservation          | 8      | Primary customer workflow     |
+| 5        | US-05         | Modify/Cancel Reservation | 4      | High guest value              |
+| 6        | US-06         | Check-In                  | 5      | Operational necessity         |
+| 7        | US-07         | Check-Out                 | 3      | Required to complete stay     |
+| 8        | US-08         | Generate Bill             | 5      | Essential for revenue         |
+| 9        | US-09         | Online Payment            | 4      | Convenience + automation      |
+| 10       | US-10         | Cleaning Status Update    | 3      | Supports room readiness       |
+| 11       | US-11         | Housekeeping Assignment   | 5      | Operational efficiency        |
+| 12       | US-12         | Maintenance Requests      | 4      | Safety & quality              |
+| 13       | US-13         | Room Inventory Management | 6      | Admin controls key hotel data |
+| 14       | US-14         | Staff Account Management  | 4      | User access control           |
+| 15       | US-15         | Notification Center       | 2      | UX improvement                |
