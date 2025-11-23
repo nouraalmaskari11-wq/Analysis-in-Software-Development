@@ -1,0 +1,55 @@
+. Weighting and Estimation
+4.1 Story Point Estimation
+
+Story points measure:
+
+Complexity
+
+Effort
+
+Risk
+
+Common scales:
+
+Fibonacci (1,2,3,5,8,13…)
+
+Modified Fibonacci
+
+Powers of 2
+
+4.2 Estimation Methods
+1. Planning Poker
+
+Team discusses story
+
+Each member privately chooses a value
+
+Cards revealed simultaneously
+
+Team discusses differences until agreement is reached
+
+2. T-Shirt Sizing
+
+XS, S, M, L, XL
+
+Converted later into points
+
+3. Bucket System
+
+Quickly categorizes stories into “buckets” of size/complexity.
+
+4.3 Weighting Stories by Complexity, Priority, and Value
+
+Criteria may include:
+
+Technical difficulty
+
+Dependencies
+
+Business value
+
+Customer impact
+
+Time sensitivity
+
+The Product Owner uses these to reorder the backlog.
