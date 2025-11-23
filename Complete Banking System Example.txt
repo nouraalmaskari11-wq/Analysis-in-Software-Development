@@ -1,0 +1,242 @@
+BANKING SYSTEM – COMPREHENSIVE EXAMPLE
+I. USER STORIES (15 total)
+
+Organized into Epics for clarity.
+
+EPIC 1 — User & Account Management
+US-01: User Registration
+
+As a new banking customer
+I want to register for an online banking account
+So that I can access digital banking services
+
+Acceptance Criteria
+
+User can sign up using email, phone, and personal details
+
+System validates unique email/phone
+
+Password must meet security requirements
+
+Confirmation email/SMS is sent
+
+Registration succeeds only after verification
+
+US-02: User Login with MFA
+
+As a customer
+I want to securely log in with multifactor authentication
+So that my account remains protected
+
+Acceptance Criteria
+
+Login requires correct username/password
+
+System triggers OTP or authenticator app request
+
+Login succeeds only with valid MFA code
+
+Failed attempts trigger lockout after X tries
+
+US-03: Create a Bank Account (Checking/Savings)
+
+As a customer
+I want to open a new checking or savings account
+So that I can deposit and manage my money
+
+Acceptance Criteria
+
+User can select account type
+
+Minimum balance rules apply
+
+Unique account number is generated
+
+Account appears in dashboard immediately
+
+EPIC 2 — Deposits / Withdrawals / Balances
+US-04: View Account Balance
+
+As a customer
+I want to view my real-time account balance
+So that I know how much money I have
+
+Acceptance Criteria
+
+Balance is fetched in real time
+
+Available and pending balance displayed
+
+Balance visible on dashboard and account page
+
+US-05: Make a Mobile Check Deposit
+
+As a customer
+I want to deposit a check using my mobile device
+So that I don’t need to visit a branch
+
+Acceptance Criteria
+
+User uploads front/back images of the check
+
+System validates clarity and check format
+
+Deposit is marked pending until review
+
+Confirmation notification is sent
+
+US-06: Withdraw Funds (ATM/Branch Request Record)
+
+As a customer
+I want to submit a withdrawal request for large amounts
+So that I can pick it up at a branch/ATM
+
+Acceptance Criteria
+
+Request includes amount and pickup location
+
+System validates available balance
+
+Request confirmation generated
+
+Withdrawal reduces available balance
+
+EPIC 3 — Transfers & Payments
+US-07: Internal Transfer Between Own Accounts
+
+As a customer
+I want to transfer money between my own accounts
+So that I can manage my funds effectively
+
+Acceptance Criteria
+
+User selects source and destination accounts
+
+Transfers reflect instantly
+
+System enforces account balance rules
+
+Transfer receipt generated
+
+US-08: External Transfer to Another Bank
+
+As a customer
+I want to transfer money to someone at another bank
+So that I can pay individuals outside my institution
+
+Acceptance Criteria
+
+User inputs routing number + external account
+
+System validates account ownership (micro-deposits or instant verify)
+
+Transfer happens via ACH with standard delays
+
+User notified of success/failure
+
+US-09: Bill Payment / Scheduled Payments
+
+As a customer
+I want to pay bills or schedule recurring payments
+So that my responsibilities are automated
+
+Acceptance Criteria
+
+User can add billers (utilities, credit cards, etc.)
+
+Supports one-time or recurring payments
+
+Scheduled payment triggers automatically
+
+Confirmation is logged in transaction history
+
+EPIC 4 — Loans and Credit
+US-10: Apply for a Loan
+
+As a customer
+I want to submit a loan application
+So that I can request funds from the bank
+
+Acceptance Criteria
+
+User selects loan type (personal, auto, mortgage)
+
+System collects income & identity info
+
+Application moves to underwriting queue
+
+User receives approval or rejection notification
+
+US-11: View Loan Repayment Schedule
+
+As a borrower
+I want to view my repayment schedule
+So that I can track upcoming payments
+
+Acceptance Criteria
+
+Monthly breakdown displayed
+
+Interest + principal clearly shown
+
+Support for early payoff calculations
+
+EPIC 5 — Statements & Transaction Reports
+US-12: Download Monthly Bank Statements
+
+As a customer
+I want to download statements
+So that I can review my financial activity
+
+Acceptance Criteria
+
+Statements available as PDF
+
+User can select month/year
+
+Statement includes official bank header, balances, and transactions
+
+US-13: View Detailed Transaction History
+
+As a customer
+I want to view my transaction history
+So that I can review past activity
+
+Acceptance Criteria
+
+Transactions searchable by type/date/category
+
+Pending vs. posted transactions indicated
+
+Details include merchant info, timestamps, and geolocation if available
+
+EPIC 6 — Notifications & Security
+US-14: Enable/Disable Transaction Alerts
+
+As a customer
+I want to control which alerts I receive
+So that I only get relevant notifications
+
+Acceptance Criteria
+
+User can enable push/SMS/email alerts
+
+Alerts can be toggled by category (withdrawals, transfers, deposits)
+
+Settings persist across sessions
+
+US-15: Fraud Detection Alerts
+
+As a customer
+I want to be notified of suspicious activity
+So that I can protect my account
+
+Acceptance Criteria
+
+Risk engine detects flagged transactions
+
+User gets immediate alert
+
+User can confirm or deny activity
+
+Denied activity results in frozen card/account
