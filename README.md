@@ -4,20 +4,29 @@ The Analysis Phase in Software Development
 <img width="980" height="530" alt="image" src="https://github.com/user-attachments/assets/b488221b-c4d6-4f8d-a01c-6b17e3d14587" />
 
 
+
 Product Backlog Development
+
 <img width="1801" height="1027" alt="image" src="https://github.com/user-attachments/assets/27d03818-5a10-4e82-a0d7-922ee95e4afa" />
 
 
+
 User Stories
+
 <img width="474" height="352" alt="image" src="https://github.com/user-attachments/assets/5b996375-f79f-448c-ac1f-2a444a9e36e3" />
 
 
+
 Weighting and Estimation
+
 <img width="720" height="540" alt="image" src="https://github.com/user-attachments/assets/4ab825a3-4bd4-4e1c-a0af-dcaab7fff5e8" />
 
 
+
 Complete Banking System Example
+
 <img width="1920" height="1356" alt="image" src="https://github.com/user-attachments/assets/ea102501-5478-439b-9b88-fa255a5b5021" />
+
 
 II. PRODUCT BACKLOG (WEIGHTED WITH PRIORITY & STORY POINTS)
 
